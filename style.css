@@ -1,0 +1,113 @@
+@font-face {
+    font-family: arcade;
+    src: url(ARCADE.TTF);
+};
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(223, 204, 204);
+}
+
+#container{
+    font-family: arcade;
+    padding: 3%;
+}
+
+#container h1{
+    text-align: center;
+    margin-top: .5em;
+    font-size: 8vw;
+    margin: auto;
+    width: 80%;
+    border-bottom: .1em solid rgb(121, 121, 121);
+}
+
+#random{
+    background-color: rgb(121, 121, 121);
+    border: 3px solid rgb(44, 44, 44);
+    font-size: 10vw;
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+#inp, #subm, #restart {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+   border: 1px solid  rgb(121, 121, 121);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 20%;
+    padding: 2%;
+    font-size: 5vw;
+}
+
+#subm,#restart {
+    width: 30%;
+    font-size: 3vw;
+}
+
+#restart{
+    background-color: rgb(54, 18, 18);
+    color: rgb(255, 255, 255);
+}
+
+#msgdiv {
+    text-align: center;
+    border-top: .2em solid rgb(121, 121, 121);
+    margin-top: 5%;
+}
+
+#msgdiv h2{
+    font-size: 5vw;
+}
+
+#msgdiv h3{
+    font-size: 4vw;
+}
+
+@media screen and (min-width: 700px) {
+    #container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #container h1{
+        font-size: 2.8vw;
+    }
+
+    #random{
+        font-size: 5vw;
+        margin-top: auto;
+        margin-inline: 1%;
+        width: 25%;
+    }
+
+    #inp, #subm, #restart{
+        display: block;
+        margin: auto;
+        margin-inline: 1%;
+        padding: 1%;
+    }
+
+    #subm, #restart{
+        font-size: 1vw;
+        width: 15%;
+    }
+
+    #msgdiv {
+        flex: 50%;
+        border-top: none;
+    }
+    #msgdiv h2, #msgdiv h3{
+        font-size: 2vw;
+    }
+
+}
